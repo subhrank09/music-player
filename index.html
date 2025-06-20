@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="albumcover/Music_logo.png">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <!-- Album Art -->
+        <div class="album-art" id="albumArt">
+            <img src="albumcover/1.jpeg" alt="Album Art">
+        </div>
+        
+        <div class="song-info">
+            <h2 id="songTitle">Song Title</h2>
+            <p id="songArtist">Artist Name</p>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress" id="progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="time">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn" id="prevBtn">⏮</button>
+            <button class="btn btn-play" id="playBtn">▶</button>
+            <button class="btn" id="nextBtn">⏭</button>
+            <button class="btn" id="repeatBtn">🔁</button>
+        </div>
+        
+        <div class="volume-container">
+            <span>🔈</span>
+            <div class="volume" id="volumeControl">
+                <div class="volume-level" id="volumeLevel"></div>
+            </div>
+            <span>🔊</span>
+        </div>
+        
+        <div class="playlist" id="playlist"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
